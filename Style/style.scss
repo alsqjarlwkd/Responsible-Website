@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .Img_Wrapper p {
   margin-top: 0px;
@@ -14,8 +15,41 @@
   height: 300px;
   background-color: gray;
   margin-top: 40px;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.Img_Gray:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.Nav_Right {
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 .Nav_Right:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+.AboutLogo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutLogo div {
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 250px;
+}
+.AboutLogo div:hover {
+  animation-name: fadeinDiv;
+  animation-duration: 2s;
+  color: white;
   cursor: pointer;
 }
 .modal_wrap {
@@ -26,7 +60,6 @@
   top: 50%;
   left: 50%;
   margin: -250px 0 0 -250px;
-  background: #eee;
   z-index: 2;
 }
 .black_bg {
@@ -35,15 +68,59 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   top: 0;
   left: 0;
   z-index: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.modal_wrap li {
+  list-style: none;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.modal_wrap li:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
 }
 .modal_close {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -30px;
-  right: 0;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.modal_close:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+.Footer {
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinDiv {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
