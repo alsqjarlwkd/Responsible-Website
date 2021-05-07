@@ -11,6 +11,25 @@
   font-weight: bold;
 }
 
+.col-lg-12 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.col-lg-12:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+
 .Work_Btn {
   text-align: center;
   width: 200px;
@@ -52,6 +71,36 @@
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   cursor: pointer;
+}
+
+.Work_btn {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Work_btn div {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  border: black 1px solid;
+}
+
+.Work_btn div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  -webkit-animation-name: whiteToblack;
+          animation-name: whiteToblack;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .modal_wrap {
@@ -147,6 +196,28 @@ a:visited {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes whiteToblack {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    background-color: black;
+  }
+}
+
+@keyframes whiteToblack {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    background-color: black;
   }
 }
 /*# sourceMappingURL=HomeStyle.css.map */
