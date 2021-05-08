@@ -8,11 +8,11 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-.col-lg-12 {
+.col-xs-12 {
   transform: scale(1);
   transition: transform 0.5s;
 }
-.col-lg-12:hover {
+.col-xs-12:hover {
   transform: scale(0.8);
   transition: transform 0.5s;
   cursor: pointer;
@@ -20,7 +20,7 @@
 
 .Work_Btn {
   text-align: center;
-  width: 200px;
+  width: 400px;
   height: 100px;
   background-color: black;
 }
@@ -51,17 +51,17 @@
   justify-content: center;
 }
 .Work_btn div {
-  width: 100px;
+  width: 400px;
   height: 50px;
-  background-color: white;
+  background-color: black;
   text-align: center;
-  color: black;
   padding-top: 10px;
   border: black 1px solid;
+  margin-bottom: 50px;
 }
 .Work_btn div:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   animation-name: whiteToblack;
   animation-duration: 2s;

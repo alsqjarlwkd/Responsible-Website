@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 
-.col-lg-12 {
+.col-xs-12 {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.5s;
@@ -20,7 +20,7 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.col-lg-12:hover {
+.col-xs-12:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-transition: -webkit-transform 0.5s;
@@ -32,7 +32,7 @@
 
 .Work_Btn {
   text-align: center;
-  width: 200px;
+  width: 400px;
   height: 100px;
   background-color: black;
 }
@@ -84,18 +84,18 @@
 }
 
 .Work_btn div {
-  width: 100px;
+  width: 400px;
   height: 50px;
-  background-color: white;
+  background-color: black;
   text-align: center;
-  color: black;
   padding-top: 10px;
   border: black 1px solid;
+  margin-bottom: 50px;
 }
 
 .Work_btn div:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   -webkit-animation-name: whiteToblack;
           animation-name: whiteToblack;
