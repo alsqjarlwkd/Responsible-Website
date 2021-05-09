@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=ProjectTitle.css.map */
+.slide_wrap {
+  width: 400px;
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.slide_box {
+  width: 2000px;
+  height: 400px;
+}
+
+.slide_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide_content {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+}
+/*# sourceMappingURL=ProjectTitle.css.map */
