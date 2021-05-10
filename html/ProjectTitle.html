@@ -4,41 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="./../Style/ProjectTitle.css">
     <title>projectTitle</title>
 </head>
 <body>
-    <div class="container d-flex flex-column justify-content-center">
-        <div class="slide_wrap">
-            <div class="slide_box">
-                <div class="slide_list clearfix">
-                    <div class="slide_content slide01">
-                        <p>1</p>
-                        </div>
-                        <div class="slide_content slide02">
-                        <p>2</p>
-                        </div>
-                        <div class="slide_content slide03">
-                        <p>3</p>
-                        </div>
-                        <div class="slide_content slide04">
-                        <p>4</p>
-                        </div>
-                        <div class="slide_content slide05">
-                        <p>5</p>
-                        </div>
+    <div class="container">
+        <div class="Nav mt-5 d-flex justify-content-between" style="margin-bottom: 30px;">
+            <h1>Min's studio</h1>
+            <p style="font-size: 20px;" class="Nav_Right">Menu</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div style="max-width: 1500px; height: 500px; background-color: gray;">1</div>
+            </div>
+            <div class="carousel-item">
+                <div style="max-width: 1500px; height: 500px; background-color: blue;">2</div>
+            </div>
+            <div class="carousel-item">
+                <div style="max-width: 1500px; height: 500px; background-color: red;">3</div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="lg-col-bg">
+                    <div class="lg-col-tt12 mt-5" style="font-size: 30px; font-weight: bold;">ProjectTitle</div>
+                    <div class="lg-col-wrt mt-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </div>
                 </div>
             </div>
-            <div class="slide_btn_box d-flex justify-content-sm-between">
-                <button type="button" class="slide_btn_prev">Prev</button>
-                <button type="button" class="slide_btn_next">Next</button>
+            <div class="col-md-6 col-xs-12">
+                <div class="lg-col-bg2">
+                    <div style="max-width: 500px; height: 300px; background-color: gray; margin-top: 50px;"></div>
                 </div>
+            </div>
+            <div class="Project_des">
+            <div class="ProjectDate">
+            <div style="font-weight: bold; font-size: 30px; margin-top: 30px;">Project Date</div>
+            <div style="margin-top: 30px;">2018</div>
+            </div>
+            <div class="TheChallenge" style="width: 500px; height: 200px;">
+                <div style="font-weight: bold; font-size: 30px; margin-top: 30px;">The Challenge</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
         </div>
-
+        <div class="Project_div">
+            <div style="width: 500px; height: 300px; background-color: gray; margin-top: 20px;"></div>
+            <div style="width: 500px; height: 300px; background-color: blue; margin-top: 20px;"></div>
+            <div style="width: 500px; height: 300px; background-color: red; margin-top: 20px;"></div>
+        </div>
+        <div class="ProjectRole_des">
+            <div class="ProjectRole">
+            <div style="margin-top: 30px; font-size: 30px; font-weight: bold">Project Role</div>
+            <div style="margin-top: 30px;">Branding, Visual Identity, Web Design, Illustration</div>
+            </div>
+            <div class="OurApproch">
+            <div style="margin-top: 30px;font-size: 30px; font-weight: bold">Our Approach</div>
+            <div style="margin-top: 30px; width: 400px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+        </div>
+        <div class="ProjectRole_des_div">
+            <div>
+            <div style="width: 500px; height: 300px; background-color: gray; margin-top: 20px;"></div>
+            <div style="width: 500px; height: 300px; background-color: blue; margin-top: 20px;"></div>
+            </div>
+            <div class="ProjectRole_des_div_last">
+            <div style="margin-top: 20px;"></div>
+            </div>
+        </div>
+        <div class="Work_btn">
+            <div style="color: black;"><a href="./Works.html">ALL WORKS</a></div>
+        </div>
+        </div>
     </div>
-        <script src="./../script/ProjectTitle.js"></script>
+    <div class="black_bg"></div>
+        <div class="modal_wrap">
+            <div>
+            <ul>
+                <li style="font-size: 50px;">Min's Studio</li>
+                <li><a href="./Home.html">HOME</a></li>
+                <li><a href="./Works.html">WORKS</a></li>
+                <li><a href="./About.html">ABOUT & CONTACT</a></li>
+                <li>BLOG</li>
+                <li class="modal_close" style="font-size: 30px;">X</li>
+            </ul>
+            </div>
+    </div> 
+        <script src="./../script/Works.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
