@@ -1,3 +1,15 @@
+@charset "UTF-8";
+body {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.container {
+  max-width: 1300px;
+}
+
 .Nav {
   margin-bottom: 50px;
 }
@@ -220,4 +232,22 @@ a:visited {
     background-color: black;
   }
 }
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: 992px) {
+  .ProjectTitle2 p {
+    text-align: right;
+  }
+  .ProjectTitle2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
 /*# sourceMappingURL=HomeStyle.css.map */

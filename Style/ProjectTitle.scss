@@ -1,17 +1,128 @@
-.slide_wrap {
+body {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.Nav_Right:hover {
+  cursor: pointer;
+}
+.ProjectRole_des_div_last div {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+}
+.Work_btn div {
   width: 400px;
-  height: 400px;
-  overflow-x: hidden;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
+  border: black 1px solid;
+  margin-bottom: 50px;
 }
-.slide_box {
-  width: 2000px;
-  height: 400px;
-}
-.slide_list {
+.Work_btn {
+  margin-top: 50px;
   display: flex;
+  justify-content: center;
 }
-.slide_content {
-  width: 400px;
-  height: 400px;
-  background-color: gray;
+.Work_btn div:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  animation-name: whiteToblack;
+  animation-duration: 2s;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.modal_wrap {
+  display: none;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  z-index: 2;
+}
+.black_bg {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.modal_wrap li {
+  list-style: none;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.modal_wrap li:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+.modal_close {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.modal_close:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+@keyframes whiteToblack {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    background-color: black;
+  }
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: 768px) {
+}
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: 992px) {
+  .Project_des {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Project_div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ProjectRole_des {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ProjectRole_des_div div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ProjectRole_des_div_last {
+    display: flex;
+    justify-content: center;
+  }
+  .ProjectRole_des_div_last div {
+    width: 1150px;
+  }
+}
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: 1200px) {
 }

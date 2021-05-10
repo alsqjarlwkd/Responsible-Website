@@ -1,3 +1,10 @@
+body {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.container {
+  max-width: 1300px;
+}
 .Nav {
   margin-bottom: 50px;
 }
@@ -135,4 +142,20 @@ a:visited {
     opacity: 1;
     background-color: black;
   }
+}
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: 768px) {
+}
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: 992px) {
+  .ProjectTitle2 p {
+    text-align: right;
+  }
+  .ProjectTitle2 div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: 1200px) {
 }
