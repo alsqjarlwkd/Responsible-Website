@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .Nav_Right:hover {
   cursor: pointer;
 }
@@ -190,4 +197,20 @@ a:visited {
 }
 
 /* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=About.css.map */

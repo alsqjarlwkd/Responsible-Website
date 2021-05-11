@@ -1,3 +1,7 @@
+body {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
 .Nav_Right:hover {
   cursor: pointer;
 }
@@ -133,4 +137,13 @@ a:visited {
 }
 /* 큰 기기들 (큰 데스크탑, 1200px 이상) */
 @media (min-width: 1200px) {
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
